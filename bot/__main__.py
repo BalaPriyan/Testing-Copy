@@ -116,7 +116,7 @@ Type /{BotCommands.HelpCommand} to get a list of available commands"""
 
 async def get_bot_pm_button():
     buttons = ButtonMaker()
-    buttons.ubutton("View in inbox", f"https://t.me/{config_dict['BOT_USERNAME']}")
+    buttons.ubutton("View in inbox", f"https://t.me/TomenXGoogleBot")
     button = buttons.build_menu(1)
     return button
 
