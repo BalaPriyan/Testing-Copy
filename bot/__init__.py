@@ -405,8 +405,7 @@ MIXED_LEECH = MIXED_LEECH.lower() == "true" and IS_PREMIUM_USER
 
 
 BOT_PM = environ.get('BOT_PM', '')
-BOT_PM = BOT_PM.lower() if BOT_PM.lower() in [
-    'leech', 'mirror', 'all'] else ''
+BOT_PM = BOT_PM.lower() == 'true'
 
 config_dict = {
     "AS_DOCUMENT": AS_DOCUMENT,
