@@ -14,7 +14,6 @@ from bot import (
     LOGGER,
     DATABASE_URL,
     config_dict,
-    get_bot_pm_button,
     non_queued_up,
     non_queued_dl,
     queued_up,
@@ -22,7 +21,7 @@ from bot import (
     queue_dict_lock,
 )
 from bot.helper.common import TaskConfig
-from bot.helper.ext_utils.bot_utils import sync_to_async,send_to_chat
+from bot.helper.ext_utils.bot_utils import sync_to_async,send_to_chat,get_bot_pm_button
 from bot.helper.ext_utils.db_handler import DbManager
 from bot.helper.ext_utils.files_utils import (
     get_path_size,
