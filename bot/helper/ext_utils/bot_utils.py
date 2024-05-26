@@ -57,6 +57,15 @@ def create_help_buttons():
     COMMAND_USAGE["clone"] = [CLONE_HELP_DICT["main"], buttons.build_menu(3)]
 
 
+
+async def get_bot_pm_button():
+    buttons = ButtonMaker()
+    buttons.ubutton("View in inbox", f"https://t.me/TomenXGoogleBot")
+    button = buttons.build_menu(1)
+    return button
+
+
+
 def bt_selection_buttons(id_):
     gid = id_[:12] if len(id_) > 25 else id_
     pincode = "".join([n for n in id_ if n.isdigit()][:4])
